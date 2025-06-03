@@ -4,7 +4,7 @@ import { OrbitControls, useGLTF } from '@react-three/drei';
 import { Header } from './components/Header/Header';
 
 function Model() {
-  const { scene } = useGLTF('/models/shoes_test_1-v1.glb');
+  const { scene } = useGLTF('models/shoes_test_1-v1.glb');
   return <primitive object={scene} scale={2} />;
 }
 
