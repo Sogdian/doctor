@@ -21,22 +21,19 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.module\.less$/,
+        test: /\.less$/,
         use: [
           'style-loader',
           {
             loader: 'css-loader',
             options: {
-              modules: true,
+              modules: {
+                auto: true, // включит CSS-модули при импорте вида `import styles from './file.less'`
+              },
             },
           },
           'less-loader',
         ],
-      },
-      {
-        test: /\.less$/,
-        exclude: /\.module\.less$/,
-        use: ['style-loader', 'css-loader', 'less-loader'],
       },
     ],
   },
@@ -54,4 +51,4 @@ module.exports = {
     open: true,
   },
   mode: 'development',
-}; 
+};
