@@ -8,7 +8,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
     clean: true,
-    publicPath: '/',
+    publicPath: '/doctor/',
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
