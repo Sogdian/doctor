@@ -27,6 +27,38 @@ const DoctorModel = () => {
   return <primitive object={scene} scale={2} />;
 };
 
+const HeroSection1: React.FC = () => (
+  <section className="hero-section hero-section-yellow">
+    <nav className="hero-navbar">
+      <ul className="hero-menu">
+        <li>Главная</li>
+        <li>О клинике</li>
+        <li>Услуги</li>
+      </ul>
+      <div className="hero-center-title">Детский доктор</div>
+      <ul className="hero-menu">
+        <li>Контакты</li>
+        <li>Блог</li>
+        <li>Записаться на приём</li>
+      </ul>
+    </nav>
+  </section>
+);
+
+const HeroSection2: React.FC = () => (
+  <section className="hero-section hero-section-welcome">
+    <div className="hero-content">
+      <h1 className="hero-title">Добро пожаловать!</h1>
+      <p className="hero-subtitle">
+        Мы создали тёплую и дружескую атмосферу, где деткам будет комфортно. Познакомьтесь с нашим подходом и врачом.
+      </p>
+      <button className="hero-cta">Записаться на приём</button>
+    </div>
+    <div className="hero-image">
+    </div>
+  </section>
+);
+
 export const LandingPage: React.FC = () => (
   <div className="landing">
     <div
@@ -53,13 +85,16 @@ export const LandingPage: React.FC = () => (
       </ul>
       <button className="bookNow">Book Now</button>
     </nav>
+
+    <HeroSection1 />
+    <HeroSection2 />
+
     <main className="main">
       <section className="info">
         <div className="subtitle">Dr. Matthew Anderson</div>
         <h1 className="title">A dedicated doctor<br/>you can trust</h1>
         <p className="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum eget vel, nunc nulla feugiat. Metus ut.</p>
         <button className="cta">Book an appointment</button>
-        
       </section>
       <section className="illustration">
         <img src={doctorImg} alt="Doctor" className="doctorImg" />
