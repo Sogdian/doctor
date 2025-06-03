@@ -28,7 +28,7 @@ module.exports = {
             loader: 'css-loader',
             options: {
               modules: {
-                auto: true, // включит CSS-модули при импорте вида `import styles from './file.less'`
+                auto: false, // true включит CSS-модули при импорте вида `import styles from './file.less'`
               },
             },
           },
