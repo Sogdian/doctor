@@ -6,7 +6,8 @@
     "start": "webpack serve --env development",
     "build": "webpack --env production",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "fullDeploy": "npm run build && gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
