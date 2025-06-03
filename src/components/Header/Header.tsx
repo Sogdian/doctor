@@ -1,10 +1,11 @@
 import React from 'react';
 import './Header.module.less';
+import logo from '../../assets/logo.png';
 
 export const Header: React.FC = () => {
   return (
     <header className="header">
-      <h1>Заголовок сайта</h1>
+      <img src={logo} alt="Логотип" className="logo"/>
     </header>
   );
 };

@@ -11,7 +11,6 @@ function Model() {
 const App: React.FC = () => (
   <div>
     <Header />
-    <h1>Детский доктор Анна Иванова</h1>
     <div style={{ width: 400, height: 400, margin: '0 auto' }}>
       <Canvas camera={{ position: [0, 0, 5], fov: 50 }}>
         <ambientLight intensity={0.7} />

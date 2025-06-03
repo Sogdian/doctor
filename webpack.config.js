@@ -42,6 +42,10 @@ module.exports = (env = {}) => {
             'less-loader',
           ],
         },
+        {
+          test: /\.(png|jpe?g|gif|svg)$/i,
+          type: 'asset/resource',
+        },
       ],
     },
     plugins: [
