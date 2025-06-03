@@ -22,10 +22,10 @@ const features = [
   },
 ];
 
-function DoctorModel() {
+const DoctorModel = () => {
   const { scene } = useGLTF('models/man.glb');
   return <primitive object={scene} scale={2} />;
-}
+};
 
 export const LandingPage: React.FC = () => (
   <div className="landing">
