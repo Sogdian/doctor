@@ -16,7 +16,7 @@ const features = [
     icon: '🎓',
   },
   {
-    title: 'High quality care',
+    title: 'High quality cares',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
     icon: '➕',
   },
