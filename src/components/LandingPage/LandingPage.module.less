@@ -2,8 +2,120 @@
   position: absolute;
   top: 0;
   left: 0;
+  width: 800px;
+  height: 400px;
+  z-index: 0; // ниже всех элементов
+  pointer-events: auto; // чтобы клики шли сквозь Canvas (если не нужно взаимодействие)
+}
+
+.pediatric-landing {
+  min-height: 100vh;
+  background: #13132a;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.pediatric-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  grid-template-rows: 1fr 180px;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pediatric-main-card {
+  background: #18183a;
+  border-radius: 32px;
+  padding: 48px 40px;
+  color: #fff;
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pediatric-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  line-height: 1.1;
+}
+
+.pediatric-desc {
+  font-size: 1.2rem;
+  margin-bottom: 32px;
+  color: #d1d1e0;
+}
+
+.pediatric-btn {
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 16px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.pediatric-btn:hover {
+  background: #5548c8;
+}
+
+.pediatric-main-img {
+  background: #fff;
+  border-radius: 32px;
+  grid-row: 1 / 3;
+  grid-column: 2 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.pediatric-main-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 32px;
+}
+
+.pediatric-card {
+  border-radius: 32px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pediatric-card1 {
+  background: #1ed6b6;
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+.pediatric-card2 {
+  background: #f7b6b6;
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  margin-left: 220px; // подвиньте по макету, либо используйте grid-area
+}
+.pediatric-card img {
   width: 100%;
   height: 100%;
-  z-index: 0; // ниже всех элементов
-  pointer-events: none; // чтобы клики шли сквозь Canvas (если не нужно взаимодействие)
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .pediatric-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 16px;
+  }
+  .pediatric-main-img, .pediatric-card {
+    grid-column: 1 / 2;
+    grid-row: auto;
+  }
+  .pediatric-main-card {
+    padding: 24px 16px;
+  }
 }
