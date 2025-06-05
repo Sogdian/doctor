@@ -30,6 +30,7 @@ const Canva = () => {
         <Suspense fallback={null}>
           <DoctorModel />
         </Suspense>
+        <OrbitControls enablePan={false} />
       </Canvas>
     </div>
   );
