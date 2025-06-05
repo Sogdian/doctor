@@ -25,13 +25,34 @@ const Canva = () => {
   )
 };
 
+import mainImg from '../../assets/main-kid.png';
+import card1 from '../../assets/card1.png';
+import card2 from '../../assets/card2.png';
 
 export const LandingPage: React.FC = () => {
   return (
-    <div>
+    <div className="pediatric-landing">
+      <div className="pediatric-grid">
+        <div className="pediatric-main-card">
+          <h1 className="pediatric-title">Comprehensive<br />Pediatric<br />Solutions</h1>
+          <p className="pediatric-desc">
+            Specialized care for children's health, offering personalized treatment with compassion and expertise in a welcoming environment in Belgrade.
+          </p>
+          <button className="pediatric-btn">Book a Visit</button>
+        </div>
+        <div className="pediatric-main-img">
+          <img src={mainImg} alt="Main kid doctor" />
+        </div>
+        <div className="pediatric-card pediatric-card1">
+          <img src={card1} alt="Kid doctor 1" />
+        </div>
+        <div className="pediatric-card pediatric-card2">
+          <img src={card2} alt="Kid doctor 2" />
+        </div>
+      </div>
       <Canva />
     </div>
-  )
+  );
 };
 
 export default LandingPage; 
