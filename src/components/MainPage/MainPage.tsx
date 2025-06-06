@@ -10,8 +10,9 @@ import {ModelBb8} from "../Model1";
 const Canva = () => {
   return (
     <div className="background-3d">
-      <Canvas camera={{ position: [5, 9, 10], fov: 45 }}>
-        <directionalLight position={[0, 10, 0]} intensity={0.8} />
+      <Canvas camera={{ position: [0, 0, 4], fov: 40 }}>
+        <ambientLight intensity={0.3} />
+        <directionalLight position={[5, 10, 5]} intensity={4} />
         <Suspense fallback={null}>
           {/* <Model1 /> */}
           <ModelBb8 />
