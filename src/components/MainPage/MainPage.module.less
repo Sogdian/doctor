@@ -73,7 +73,7 @@ body {
 .pediatric-main-img img {
   width: 100%;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 32px;
 }
 
@@ -83,31 +83,31 @@ body {
 }
 
 .pediatric-card1 {
-  grid-row: 2 / 3;
+  grid-row: 2 / 2;
   grid-column: 1 / 2;
 }
 
 .pediatric-card2 {
-  grid-row: 2 / 3;
+  grid-row: 2 / 2;
   grid-column: 1 / 2;
-  margin-left: 220px;
+  margin-left: 350px;
 }
 
 .pediatric-card img {
   object-fit: cover;
 }
 
-@media (max-width: 900px) {
-  .pediatric-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    gap: 16px;
-  }
-  .pediatric-main-img, .pediatric-card {
-    grid-column: 1 / 2;
-    grid-row: auto;
-  }
-  .pediatric-main-card {
-    padding: 24px 16px;
-  }
-}
+// @media (max-width: 900px) {
+//   .pediatric-grid {
+//     grid-template-columns: 1fr;
+//     grid-template-rows: auto;
+//     gap: 16px;
+//   }
+//   .pediatric-main-img, .pediatric-card {
+//     grid-column: 1 / 2;
+//     grid-row: auto;
+//   }
+//   .pediatric-main-card {
+//     padding: 24px 16px;
+//   }
+// }
