@@ -11,8 +11,7 @@ const Canva = () => {
   return (
     <div className="background-3d">
       <Canvas camera={{ position: [0, 0, 4], fov: 40 }}>
-        <ambientLight intensity={0.3} />
-        <directionalLight position={[5, 10, 5]} intensity={4} />
+        <ambientLight intensity={2} />
         <Suspense fallback={null}>
           {/* <Model1 /> */}
           <ModelBb8 />
