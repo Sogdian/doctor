@@ -1,6 +1,6 @@
 import React from 'react';
-import { LandingPage } from './components/LandingPage';
+import { MainPage } from './components/MainPage';
 
-const App: React.FC = () => <LandingPage />;
+const App: React.FC = () => <MainPage />;
 
 export default App; 
