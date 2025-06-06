@@ -5,18 +5,16 @@ import './MainPage.module.less';
 import mainImg from '../../assets/main-kid.png';
 import card1 from '../../assets/card1.png';
 import card2 from '../../assets/card2.png';
-import {Model2} from "../Model1/Model1";
+import {ModelBb8} from "../Model1";
 
 const Canva = () => {
   return (
-    <div
-      className="background-3d"
-    >
+    <div className="background-3d">
       <Canvas camera={{ position: [5, 9, 10], fov: 45 }}>
         <directionalLight position={[0, 10, 0]} intensity={0.8} />
         <Suspense fallback={null}>
           {/* <Model1 /> */}
-          <Model2 />
+          <ModelBb8 />
         </Suspense>
         <OrbitControls enablePan={false} />
       </Canvas>
@@ -49,5 +47,3 @@ export const MainPage: React.FC = () => {
     </div>
   );
 };
-
-export default MainPage;

@@ -19,7 +19,7 @@ export const Model1 = () => {
 };
 
 
-export const Model2 = () => {
+export const ModelBb8 = () => {
     const group = useRef<Group>(null);
     const { scene, animations } = useGLTF('models/bb8.glb');
     const { actions } = useAnimations(animations, group);
