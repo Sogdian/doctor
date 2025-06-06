@@ -6,7 +6,7 @@ import './LandingPage.module.less';
 
 const DoctorModel = () => {
   const group = useRef<Group>(null);
-  const { scene, animations } = useGLTF('models/Box.glb');
+  const { scene, animations } = useGLTF('models/shoes_test.glb');
   const { actions } = useAnimations(animations, group);
 
   useEffect(() => {
