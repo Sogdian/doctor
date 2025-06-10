@@ -6,7 +6,7 @@ import './LandingPage.module.less';
 
 const DoctorModel = () => {
   const group = useRef<Group>(null);
-  const { scene, animations } = useGLTF('models/shoes_test.glb');
+  const { scene, animations } = useGLTF('models/elephant.glb');
   const { actions } = useAnimations(animations, group);
 
   useEffect(() => {
@@ -26,7 +26,8 @@ const Canva = () => {
       className="background-3d"
     >
       <Canvas camera={{ position: [5, 9, 10], fov: 45 }}>
-        <directionalLight position={[0, 10, 0]} intensity={0.8} />
+        <ambientLight intensity={2} />
+        <directionalLight position={[0, 10, 0]} intensity={0} />
         <Suspense fallback={null}>
           <DoctorModel />
         </Suspense>
